@@ -1,0 +1,172 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head lang="es">
+	    <meta charset="UTF-8">
+		<title>EXAMEN TIPO ICFES</title>
+						
+		<script type="text/javascript">
+			
+		function Calificacion(){
+		var sum,a,b,c,d,e,f,g,h;
+		sum = 0;
+		
+			if(document.pregunta1.preg1[1].checked){
+					a=1;
+			} else {a=0}
+			if(document.pregunta2.preg2[3].checked){
+					b=1;
+			} else {b=0}
+			if(document.pregunta3.preg3[1].checked){
+					c=1;
+			} else {c=0}
+			if(document.pregunta4.preg4[0].checked){
+					d=1;
+			} else {d=0}
+			if(document.pregunta5.preg5[2].checked){
+					e=1;
+			} else {e=0}
+			if(document.pregunta6.preg6[1].checked){
+					f=1;
+			} else {f=0}
+			if(document.pregunta7.preg7[0].checked){
+					g=1;
+			} else {g=0}
+			if(document.pregunta8.preg8[2].checked){
+					h=1;
+			} else {h=0}
+			
+		sum = a+b+c+d+e+f+g+h;	
+		
+		var notaa = (sum*5)/8;
+		var nota = notaa.toFixed(1);
+		alert("Su Calificación es " + nota)
+		
+		document.pregunta1.disabled = true;
+		document.pregunta2.disabled = true;
+		document.pregunta3.disabled = true;
+		document.pregunta4.disabled = true;
+		document.pregunta5.disabled = true;
+		document.pregunta6.disabled = true;
+		document.pregunta7.disabled = true;
+		document.pregunta8.disabled = true;
+		document.ENVIAR.disabled = true;
+		
+		}
+				
+		</script>
+		
+	</head>
+	
+	<body>
+	
+		<header>
+			<h1>PROBABILIDAD Y ESTADÍSTICA</h1>
+			<h1>CIENCIAS BÁSICAS</h1>
+			<h1>SEGUNDO CORTE</h1>
+			<hr/>
+			<br/>
+		</header>
+			
+		<h4>PREGUNTA 1</h4>
+		<p> Los resultados de una prueba de conocimientos estándar realizada a un grupo de 450 personas,
+indicaron que las puntuaciones seguían una distribución normal con media 85 puntos y desviación
+típica de 9 puntos. Según el comportamiento de las puntuaciones cuál de las siguientes afirmaciones
+es correcta: </p>
+		<form name="pregunta1">
+		<input type="radio" name="preg1" value="0"/>Las puntuaciones menores a 60 puntos, son mas de 10.<br/>
+		<input type="radio" name="preg1" value="0"/>Más de 200 personas tiene calificacion inferiores a 90 puntos<br/>
+		<input type="radio" name="preg1" value="1"/>67 de las personas tuvieron puntuaciones superiores a 90 puntos.<br/>
+		<input type="radio" name="preg1" value="0"/>El número de personas con puntuaciones menores a 90 es igual a la cantidad con puntuaciones
+mayores a 60.<br/> 
+		</form>
+		
+		<h4>PREGUNTA 2</h4>
+		<p> La probabilidad de que un artículo producido por una fábrica sea defectuoso es p = 0.02. Se envió
+un cargamento de 10.000 artículos a unos almacenes. El valor esperado de artículos defectuosos, la
+varianza y la desviación típica, correspondientes son:</p>
+		<form name="pregunta2">
+		<input type="radio" name="preg2" value="0"/>20, 194, 14<br/>
+		<input type="radio" name="preg2" value="0"/>200, 194, 11<br/>
+		<input type="radio" name="preg2" value="0"/>20, 174, 13<br/>
+		<input type="radio" name="preg2" value="1"/>200, 196, 14<br/>
+		</form>
+		
+		<h4>PREGUNTA 3</h4>
+		<p> En una fiesta hay 20 personas de las cuales 14 son casadas y 6 solteras. Se eligen 3 personas al azar.
+La probabilidad de que las 3 sean solteras es: </p>
+		<form name="pregunta3">
+		<input type="radio" name="preg3" value="0"/>0.2135<br/>
+		<input type="radio" name="preg3" value="0"/>0.0175<br/>
+		<input type="radio" name="preg3" value="1"/>0.2347<br/>
+		<input type="radio" name="preg3" value="0"/>0.0198<br/> 
+		</form>
+		
+		<h4>PREGUNTA 4</h4>
+		<p> Una empresa electrónica observa que el número de componentes que fallan antes de cumplir 100
+horas de funcionamiento es una variable aleatoria de Poisson. Si el número promedio de estos fallos
+es ocho. La probabilidad de que falle un componente antes de las 25 horas es </p>
+		<form name="pregunta4">
+		<input type="radio" name="preg4" value="0"/> Aproximadamente el 27%<br/>
+		<input type="radio" name="preg4" value="0"/> Exactamente el 30%<br/>
+		<input type="radio" name="preg4" value="1"/> Aproximadamente el 45%<br/>
+		<input type="radio" name="preg4" value="0"/> Exactamente el 15%<br/>
+		</form>
+		
+		<h4>PREGUNTA 5</h4>
+		<p> Un laboratorio afirma que una droga causa efectos secundarios en una proporción de 3 de cada 100
+pacientes. Para contrastar esta afirmación, otro laboratorio elige al azar a 5 pacientes a los que aplica
+la droga. La probabilidad de que al menos dos tengan efectos secundarios es: </p>
+		<form name="pregunta5">
+		<input type="radio" name="preg5" value="1"/>0.1024<br/>
+		<input type="radio" name="preg5" value="0"/>0.9936<br/>
+		<input type="radio" name="preg5" value="0"/>0.0085<br/>
+		<input type="radio" name="preg5" value="0"/>0.2346<br/> 
+		</form>
+		
+		<h4>PREGUNTA 6</h4>
+		<p>Suponga que cierta pieza metálica se romperá después de sufrir dos ciclos de esfuerzo. Si estos
+ciclos ocurren de manera independiente a una frecuencia promedio de dos por cada 100 horas. La
+probabilidad de que el intervalo de tiempo se encuentre hasta que ocurre el segundo ciclo dentro de
+una desviación con respecto del tiempo promedio</p>
+		<form name="pregunta6">
+		<input type="radio" name="preg6" value="0"/>0.86702 <br/>
+		<input type="radio" name="preg6" value="0"/>0.73752 <br/>
+		<input type="radio" name="preg6" value="1"/>0.56789 <br/>
+		<input type="radio" name="preg6" value="0"/>0.34836 <br/>
+		</form>
+		
+		<h4>PREGUNTA 7</h4>
+		<p> En la sala de pediatría de un hospital, el 60% de los pacientes son niñas. De los niños el 35% 
+son menores de 24 meses. El 20% de las niñas tienen menos de 24 meses. Un pediatra que ingresa a la 
+sala selecciona un infante al azar. Si el infante resulta ser menor de 24 meses. La probabilidad 
+que sea una niña es:</p>
+		<form name="pregunta7">
+		<input type="radio" name="preg7" value="0"/> 0,46<br/>
+		<input type="radio" name="preg7" value="1"/> 0,84<br/>
+		<input type="radio" name="preg7" value="0"/> 0,56<br/>
+		<input type="radio" name="preg7" value="0"/> 35%<br/> 
+		</form>
+		
+		<h4>PREGUNTA 8</h4>
+		<p> Se sortea un viaje a Roma entre los 120 mejores clientes de una agencia de automóviles. 
+De ellos, 65 son mujeres, 80 están casados y 45 son mujeres casadas. Si del afortunado se sabe que 
+es casado, La probabilidad de que sea una mujer es: </p>
+		<form name="pregunta8">
+		<input type="radio" name="preg8" value="0"/> 0,4532<br/>
+		<input type="radio" name="preg8" value="1"/> 0,0345<br/>
+		<input type="radio" name="preg8" value="0"/> 0,5625<br/>
+		<input type="radio" name="preg8" value="0"/> 0,1134<br/>
+		</form>
+		
+		<br/> 	<hr/> 	<br/>
+		<button type="submit" name="ENVIAR" onclick="Calificacion()">ENVIAR</button>
+		<br/>   <br/>
+		
+	</body>
+	
+	
+	
+</html>
+
+
